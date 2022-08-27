@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7735554316686627"
+     crossorigin="anonymous"></script>
+   
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K63KQMW');</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  }
+div.responsive{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+header {
+	padding: 3em;
+	clear: left;
+	text-align: center;
+    
+   
+}
+
+h2{text-align:center;
+  clear: left;
+  underline: black;
+   } 
+body {
+  margin-left: 3em;
+  margin-right:3em;
+  background: #edeced;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.space {
+  margin-left: 4em;
+  margin-right:4em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+
+$font:'Source Sans Pro', sans-serif;
+$primary:#FF0072;
+$second:#644cad;
+$third:#4426a8;
+  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  padding:0px;
+  margin:0;
+  font-family:$font;
+  background: #edeced;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark {
+  background:#edeced;
+}
+
+.flex {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+a.bttn {
+  color:;
+  text-decoration:none;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:hover {
+    color:#FFF;
+  }
+  &:focus {
+    color:#FFF;
+  }
+}
+
+a.bttn-dark {
+  color:
+  text-decoration:none;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:hover {
+    color:#FFF;
+  }
+  &:focus {
+    color:#FFF;
+  }
+}
+
+
+.bttn {
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  display:inline-block;
+  text-align:center;
+  width:270px;
+  font-weight:bold;
+  padding:14px 0px;
+  border:3px solid $primary;
+  border-radius:2px;
+  position:relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:$primary;
+    z-index:-2;
+  }
+  &:hover {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+  &:focus {
+    &:before {
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+
+.bttn-dark {
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  display:inline-block;
+  text-align:center;
+  width:270px;
+  font-weight:bold;
+  padding:14px 0px;
+  border:3px solid $second;
+  border-radius:2px;
+  position:relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  z-index:2;
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:$second;
+    z-index:-1;
+  }
+  &:hover {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+  &:focus {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+ footer{
+	padding: 3em;
+	clear: left;
+	text-align: center;
+	background-color:black;
+	color:white;
+   
+`}
+@media print {
+   .separator3 {
+      visibility: hidden;
+   }
+}
+
+
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K63KQMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="SYALLBUSBOOK.HTML">Syllabus</a>
+  <a href="	SM.html">Studymaterials</a> 
+  <a href="SOFTWARE.HTML">Software</a>
+  
+    <div class="dropdown">
+ </div>
+  <a href="aboutus.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <B>Menu &#8595</B>
+  </a>
+</div>
+<header>
+<img src="Neon_Green_and_Black_Typographic_Music_Logo.png" alt="logo" class="responsive" > <hr>
+</header>
+<div class="separator1"><font face="Cooper Std" size="6" color="#000000"><b>classtest-2</b></font></div><br>
+					<div class="separator2"><font size="4"><b>  1. DISCUSS IN DETAIL ABOUT NAMING CONSTRAINTS OF CLASS METHODS AND PROGRAM<br>
+
+</b></div>
+					<blockquote class="separator3">
+
+Java naming convention is a rule to follow as you decide what to name your identifiers such as class, package, variable, constant, method, etc.<br>
+Class	<br>
+It should start with the uppercase letter.<br>
+Use appropriate words, instead of acronyms.	<br>
+public class Employee<br>
+{<br>
+//code snippet<br>
+}<br>
+
+Method	<br>
+It should start with lowercase letter.<br>
+It should be a verb such as main(), print(), println().<br>
+If the name contains multiple words, start it with a lowercase letter followed by an uppercase letter such as actionPerformed().<br>	class Employee<br>
+{<br>
+// method<br>
+void draw()<br>
+{<br>
+//code snippet<br>
+}<br>
+}<br>
+Variable<br>
+it should start with a lowercase letter such as id, name.<br>
+It should not start with the special characters like & (ampersand), $ (dollar), _ (underscore).<br>
+If the name contains multiple words, start it with the lowercase letter followed by an uppercase letter such as firstName, lastName.<br>
+Avoid using one-character variables such as x, y, z.	<br>
+class Employee<br>
+{<br>
+// variable<br>
+int id;<br>
+//code snippet<br>
+}<br>
+
+
+ import java.util.Scanner;  <br>
+public class ConstantExample1   <br>
+{  <br>
+//declaring constant   <br>
+private static final double PRICE=234.90;  <br>
+public static void main(String[] args)  <br>
+{  <br>
+int unit;  <br>
+double total_bill;  <br>
+System.out.print("Enter the number of units you have used: ");  <br>
+Scanner sc=new Scanner(System.in);  <br>
+unit=sc.nextInt();  <br>
+total_bill=PRICE*unit;  <br>
+System.out.println("The total amount you have to deposit is: "+total_bill);  <br>
+}  <br>
+}  <br>
+</blockquote>
+
+<div class="separator1"><font face="Cooper Std" size="6" color="#000000"><b></b></font></div><br>
+					<div class="separator2"><font size="4"><b>2. WRITE A DETAILED NOTES ON CONSTRUCTOR IN JAVA EXAMPLE ?;</B><br>
+					
+</blockquote>
+					<blockquote class="separator3">
+In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+<br>It is a special type of method which is used to initialize the object.<br>
+
+Every time an object is created using the new() keyword, at least one constructor is called.<br>
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.<br>
+
+
+Rules for creating Java constructor<br>
+There are two rules defined for the constructor.<br>
+
+Constructor name must be the same as its class name<br>
+A Constructor must have no explicit return type<br>
+A Java constructor cannot be abstract, static, final, and synchronized<br>
+
+Types of Java constructors<br>
+There are two types of constructors in Java:<br>
+
+Default constructor (no-arg constructor)<br>
+A constructor is called "Default Constructor" when it doesn't have any parameter.<br>
+<br>
+class Main {<br>
+
+  int i;<br>
+
+  // constructor with no parameter<br>
+  private Main() {<br>
+    i = 5;<br>
+    System.out.println("Constructor is called");<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+
+    // calling the constructor without any parameter<br>
+    Main obj = new Main();<br>
+    System.out.println("Value of i: " + obj.i);<br>
+  }
+}
+
+Parameterized constructor<br>
+A constructor which has a specific number of parameters is called a parameterized constructor.<br>
+
+class Main {<br>
+
+  String languages;<br>
+
+  // constructor accepting single value<br>
+  Main(String lang) {<br>
+    languages = lang;<br>
+    System.out.println(languages + " Programming Language");<br>
+  }<br>
+<br>
+  public static void main(String[] args) {<br><br>
+<br>
+    // call constructor by passing a single value
+    Main obj1 = new Main("Java");
+    Main obj2 = new Main("Python");
+    Main obj3 = new Main("C");
+  }
+}
+<br>
+</blockquote>	
+
+<div class="separator1"><font face="Cooper Std" size="6" color="#000000"><b></b></font></div><br>
+					<div class="separator2"><font size="4"><b></B><br>
+					
+</blockquote>
+					<blockquote class="separator3">
+
+<br>
+</blockquote>	
+<div class="separator2"><font size="4"><b>3. explain encapsulation in details write java program with variable binded using getter and setter methond </B><br>
+					
+</blockquote>
+					<blockquote class="separator3">
+					
+Encapsulation  is a process of wrapping code and data together into a single unit.<br>
+
+We can create a fully encapsulated class in Java by making all the data members of the class private. <br>
+
+
+
+
+
+class Account {  <br>
+//private data members  <br>
+private long acc_no;  <br>
+private String name,email;  <br>
+private float amount;  <br>
+//public getter and setter methods  <br>
+public long getAcc_no() {  <br>
+    return acc_no;  <br>
+}  <br>
+public void setAcc_no(long acc_no) {  <br>
+    this.acc_no = acc_no;  <br>
+}  <br>
+public String getName() {  <br>
+    return name;  <br>
+}  <br>
+public void setName(String name) {  <br>
+    this.name = name;  <br>
+}  <br>
+public String getEmail() {  <br>
+    return email;  <br>
+}  <br>
+public void setEmail(String email) {  <br>
+    this.email = email;  <br>
+}  <br>
+public float getAmount() {  <br>
+    return amount;  <br>
+}  <br>
+public void setAmount(float amount) {  <br>
+    this.amount = amount;  <br>
+}  <br>
+  
+}  <br>
+
+<br>
+</blockquote>	
+					 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7735554316686627"crossorigin="anonymous"></script><!-- website ads --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7735554316686627"data-ad-slot="1840656475"data-ad-format="auto"data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> <footer> &#169; COPYRIGHT 2022 DESIGNED, DEVELOPED AND MAINTAINED BY MANOHAR MAKARLA
+<br>
+<!-- hitwebcounter Code START -->
+<a href="http://www.manoharmakarla.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7975686&style=0006&nbdigits=9&type=page&initCount=1000" title="Free Counter" Alt="web counter"   border="0" /></a>   
+  </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var message="WARNING :Right click disabled.  - ManoharMakarla";
+						///////////////////////////////////
+						function clickIE() {if (document.all) {alert(message);return false;}}
+						function clickNS(e) {if 
+						(document.layers||(document.getElementById&&!document.all)) {
+						if (e.which==2||e.which==3) {alert(message);return false;}}}
+						if (document.layers) 
+						{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+						else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+						document.oncontextmenu=new Function("return false")
+						// --> 
+						
+						
+</script>
+
+</body>
+</html>
