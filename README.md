@@ -1,4 +1,4 @@
-oharmakarl/README.md
+
 👋 Hi, I’m @Manoharmakarla
 👀 I’m interested in web devlopment
 🌱 I’m currently learning react
